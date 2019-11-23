@@ -9,7 +9,7 @@ def one_way(base, modified):  # zero or one editions
         j += 1
     return editions <= 1
 
-
+# TODO send improved response
 if __name__ == '__main__':
     print(one_way('pale', 'ple'))
     print(one_way('pale', 'bale'))

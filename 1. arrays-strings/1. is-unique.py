@@ -7,5 +7,5 @@ def is_unique(string):
     return True
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # TODO make pull request with this optimized solution
     print(is_unique('Joan'))

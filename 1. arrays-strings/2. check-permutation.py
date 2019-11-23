@@ -1,7 +1,7 @@
-from itertools import permutations
+def check_permutation(string1, string2):  # Time: O (n) and Space O(n)
+    if len(string1) != len(string2):
+        return False
 
-
-def check_permutation(string1, string2):  # Time: O (n + m) and Space O(n), being n string 1 and m string 2
     counter1 = {}
     for char in string1:
         counter1[char] = counter1.get(char, 0) + 1
