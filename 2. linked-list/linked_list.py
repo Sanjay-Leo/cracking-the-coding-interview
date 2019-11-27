@@ -30,28 +30,6 @@ class LinkedList:
         for value in values:
             self.insert_node(value)
 
-    def remove_duplicates(self):
-        pass
-
-    def return_kth_last(self, k):
-        counter = 1
-        first = second = self.head
-        while counter <= k and second:
-            counter += 1
-            second = second.next
-
-        if second is None:
-            return None
-
-        while second:
-            first = first.next
-            second = second.next
-        return first
-
-    def del_middle_node(self, node):
-        node.value = node.next.value
-        node.next = node.next.next
-
     def insert_head(self, value):
         node = Node(value)
         if self.head is None:

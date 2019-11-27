@@ -1,8 +1,16 @@
-from linked_list import LinkedList
+from linked_list import Node
+
+
+def del_middle_node(node):
+    node.value = node.next.value
+    node.next = node.next.next
+
 
 if __name__ == '__main__':
-    ll = LinkedList(0)
-    ll.insert_node(2).insert_node(2).insert_node(2)
-    print(ll)
-    ll.del_middle_node(ll.return_kth_last(3))
-    print(ll)
+    node = Node(2)
+    node.next = Node(3)
+    node.next.next = Node(4)
+
+    print(node, node.next)
+    del_middle_node(node)
+    print(node, node.next)
