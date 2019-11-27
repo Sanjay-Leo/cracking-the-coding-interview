@@ -62,3 +62,11 @@ class LinkedList:
                 statement += ' -> '
 
         return statement
+
+    def __len__(self):
+        counter = 0
+        current = self.head
+        while current:
+            counter += 1
+            current = current.next
+        return counter
